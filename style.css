@@ -18,45 +18,76 @@ nav ul{
   display: flex;
   align-items: center;
   list-style-type: none;
-  height: 60px;
+  height: 40px;
   background-color: black;
   color: white;
-  /* justify-content: center; */
 }
 
 nav ul li{
   padding: 0 10px;
 }
 
-.brand{
+.brand {
   display: flex;
   align-items: center;
   font-weight: bolder;
   font-size: 1.3rem;
-  /* flex-direction: column; */
 }
+
 .brand img{
   width: 40px;
   padding: 0 5px;
 }
 
-.main-area{
-  min-height: 80vh;
+.track-list-area{
+  min-height: 75vh;
+  background-color: black;
+  background-image: url('bg.jpg');
+  background-size: 100%;
+  color: white;
+  font-family: 'Varela Round', sans-serif;
+  display: flex;
+  margin: 20px auto;
+  width: 70%;
+  padding: 30px;
+  border-radius: 15px;
+}
+
+.track-item{
+  height: 50px;
+  /* width: 80%; */
+  background-color: white;
+  color: black;
+  margin: 12px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.track-item img{
+  width: 40px;
+  margin: 0 5px;
+  border-radius: 20px;
+
 }
 
 .play-bar{
   position: sticky;
-  height: 130px;
+  height: 100px;
   background-color: black;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  color: white;
 }
 
 #my-progress-bar{
   width: 80vw;
 }
 
-.icons{
-  color: white;
+.icons i{
+  cursor: pointer;
+  margin: 12px;
 }
