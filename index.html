@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="logo.png" type="image/x-icon">
   <link rel="stylesheet" href="style.css">
   <title>Spotify - Music Application</title>
 </head>
@@ -18,38 +19,31 @@
   <div class="track-list-area">
     <div class="track-list">
       <h1>Playing Music - Atif Aslam</h1>
-      <div>
+      <div class="track-item-area">
         <div class="track-item">
             <img src="/covers/1.jpg" alt="song1">
-            <span>Aey Khuda Aey Khuda</span>
+            <span class="track-name">Aey Khuda Aey Khuda</span>
             <span class="track-list-play"><span class="time-stamp">05:30 <i class="fa-regular fa-circle-play"></i></span>
             </span>
-        </div>     
-        <div class="track-item">
-          <img src="/covers/1.jpg" alt="song1">
-          <span>Aey Khuda Aey Khuda</span>
-          <span class="track-list-play"><span class="time-stamp">05:30 <i class="fa-regular fa-circle-play"></i></span>
-          </span>
-      </div>     
-      <div class="track-item">
-        <img src="/covers/1.jpg" alt="song1">
-        <span>Aey Khuda Aey Khuda</span>
-        <span class="track-list-play"><span class="time-stamp">05:30 <i class="fa-regular fa-circle-play"></i></span>
-        </span>
-    </div>      
+        </div>
       </div>
     </div>
     <div class="side-banner"></div>
   </div>
   <div class="play-bar">
-    <input type="range" name="range" id="my-progress-bar" min="0" max="100" />
-    <!-- <label for="my-progress-bar">Play</label> -->
-    <div class="icons">
-      <!-- fontAweseme icons -->
-      <i class="fa-solid fa-3x fa-backward-step"></i>
-      <i class="fa-regular fa-3x fa-circle-play"></i>
-      <i class="fa-solid fa-3x fa-forward-step"></i>
-    </div>
+    <input type="range" name="range" id="my-progress-bar" min="0" max="100" value="0.0" />
+    <label for="my-progress-bar">Play</label>
+    <!-- <div class="icon-play"> -->
+      <div class="icons">
+        <!-- fontAweseme icons -->
+        <i class="fa-solid fa-3x fa-backward-step"></i>
+        <i class="fa-regular fa-3x fa-circle-play" id="master-play"></i>
+        <i class="fa-solid fa-3x fa-forward-step"></i>
+      </div>
+      <div class="playing">
+        <img src="playing.gif" alt="playing" id="playing"> Aey Khuda Aey Khuda
+      </div>
+    <!-- </div> -->
   </div>
   
   <script src="https://kit.fontawesome.com/be37c6e38e.js" crossorigin="anonymous"></script>

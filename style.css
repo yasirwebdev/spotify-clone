@@ -52,17 +52,20 @@ nav ul li{
   padding: 30px;
   border-radius: 15px;
 }
+.track-item-area{
+  margin-top: 60px;
+}
 
 .track-item{
-  height: 50px;
-  /* width: 80%; */
+  height: 45px;
+  width: 100%;
   background-color: white;
   color: black;
   margin: 12px 0;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 .track-item img{
@@ -82,12 +85,32 @@ nav ul li{
   flex-direction: column;
   color: white;
 }
+.time-stamp i{
+  cursor: pointer;
+}
 
 #my-progress-bar{
   width: 80vw;
+  cursor: pointer;
 }
 
 .icons i{
   cursor: pointer;
   margin: 12px;
 }
+.playing{
+  position: absolute;
+  left: 10vw;
+  font-family: 'Varela Round' sans-serif;
+}
+.playing img{
+  width: 40px;
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
+}
+/* .icon-play{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 60px;
+} */
